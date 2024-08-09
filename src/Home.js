@@ -54,7 +54,20 @@ const Home = () => {
               <h3>Descentralizado</h3>
               <p>O Bitcoin não é controlado por nenhum governo ou instituição financeira.</p>
             </li>
+            <li>
+              <h3>Seguro</h3>
+              <p>As transações são protegidas por criptografia avançada e são registradas em um livro-razão público.</p>
+            </li>
+            <li>
+              <h3>Rápido</h3>
+              <p>As transações são processadas em minutos, independentemente da localização geográfica.</p>
+            </li>
           </ul>
+        </section>
+        <section className="call-to-action">
+          <h2>Participe da revolução</h2>
+          <p>Compre, venda e use Bitcoin para mudar o futuro da moeda.</p>
+          <button>Compre Bitcoin agora</button>
         </section>
       </main>
     </div>
