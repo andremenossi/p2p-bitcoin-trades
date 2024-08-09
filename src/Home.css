@@ -1,19 +1,17 @@
 /* src/Home.css */
 
-.fixed-top {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  transition: top 0.3s ease-in-out;
-}
-
-.fixed-bottom {
+.fixed {
   position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
-  transition: bottom 0.3s ease-in-out;
+}
+
+.top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .home-page {

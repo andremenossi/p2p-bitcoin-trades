@@ -15,14 +15,11 @@ const Home = () => {
       const viewportHeight = window.innerHeight;
       
       if (scrollY > headerHeight - viewportHeight) {
-        header.classList.add('fixed-bottom');
-        header.classList.remove('fixed-top');
-      } else if (scrollY === 0) {
-        header.classList.remove('fixed-bottom');
-        header.classList.add('fixed-top');
+        header.classList.add('fixed');
+        header.classList.remove('top');
       } else {
-        header.classList.remove('fixed-bottom');
-        header.classList.remove('fixed-top');
+        header.classList.remove('fixed');
+        header.classList.add('top');
       }
     }
 
