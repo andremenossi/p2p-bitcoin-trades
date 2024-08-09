@@ -7,12 +7,13 @@
 
 .header {
   position: fixed;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   background-color: #000;
   color: #fff;
   padding: 20px;
+  height: 60px; /* adicione essa linha */
   transition: top 0.5s ease-in-out;
   z-index: 1000;
 }
@@ -52,6 +53,7 @@
 .main {
   padding: 50px;
   box-sizing: border-box;
+  margin-top: 60px; /* adicione essa linha */
 }
 
 .top {
