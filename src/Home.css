@@ -14,6 +14,7 @@
   color: #fff;
   padding: 20px;
   transition: top 0.5s ease-in-out;
+  z-index: 1000;
 }
 
 .header.fixed {
@@ -24,12 +25,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: flex;
 }
 
 .nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 .nav li {
@@ -48,6 +51,7 @@
 
 .main {
   padding: 50px;
+  box-sizing: border-box;
 }
 
 .top {
