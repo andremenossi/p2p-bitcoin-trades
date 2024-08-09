@@ -17,7 +17,7 @@ const Home = () => {
       if (scrollY > headerHeight - viewportHeight) {
         header.classList.add('fixed-bottom');
         header.classList.remove('fixed-top');
-      } else if (scrollY <= 0) {
+      } else if (scrollY === 0) {
         header.classList.remove('fixed-bottom');
         header.classList.add('fixed-top');
       } else {
