@@ -13,13 +13,16 @@ const Home = () => {
       const scrollY = window.pageYOffset;
       const headerHeight = header.offsetHeight;
       const viewportHeight = window.innerHeight;
-
+    
       if (scrollY > headerHeight - viewportHeight) {
         header.classList.add('fixed-bottom');
         header.classList.remove('fixed-top');
-      } else {
+      } else if (scrollY < 0) {
         header.classList.remove('fixed-bottom');
         header.classList.add('fixed-top');
+      } else {
+        header.classList.remove('fixed-bottom');
+        header.classList.remove('fixed-top');
       }
     }
 
