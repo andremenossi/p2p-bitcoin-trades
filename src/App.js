@@ -1,5 +1,6 @@
 // src/App.js
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.css';
 import Home from './Home';
 import './Home.css';
 
