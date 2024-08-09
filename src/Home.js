@@ -8,23 +8,16 @@ const Home = () => {
 
   useEffect(() => {
     const header = headerRef.current;
-    let lastScrollY = window.pageYOffset;
 
     function handleScroll() {
-      const currentScrollY = window.pageYOffset;
-      if (currentScrollY > lastScrollY) {
-        // Scroll down
-        header.classList.remove('fixed');
+      const scrollY = window.pageYOffset;
+      if (scrollY > 0) {
+        header.classList.add('fixed-bottom');
+        header.classList.remove('fixed-top');
       } else {
-        // Scroll up
-        if (window.innerHeight + currentScrollY >= document.documentElement.scrollHeight) {
-          // Reached bottom of page
-          header.classList.add('fixed');
-        } else {
-          header.classList.add('fixed');
-        }
+        header.classList.remove('fixed-bottom');
+        header.classList.add('fixed-top');
       }
-      lastScrollY = currentScrollY;
     }
 
     window.addEventListener('scroll', handleScroll);
@@ -36,7 +29,7 @@ const Home = () => {
 
   return (
     <div className="home-page">
-      <header ref={headerRef} className="header">
+      <header ref={headerRef} className="header fixed-top">
         <nav className="nav">
           <ul>
             <li><a href="#">Bitcoin</a></li>
@@ -46,7 +39,7 @@ const Home = () => {
           </ul>
         </nav>
       </header>
-      <main className="main" style={{ marginTop: '60px' }}>
+      <main className="main">
         <section className="hero">
           <h1>Bitcoin: a moeda digital descentralizada</h1>
           <p>Um sistema de pagamento peer-to-peer eletrônico que permite transações diretas entre indivíduos sem a necessidade de intermediários.</p>

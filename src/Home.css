@@ -1,5 +1,19 @@
 /* src/Home.css */
 
+.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.fixed-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
 .home-page {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
