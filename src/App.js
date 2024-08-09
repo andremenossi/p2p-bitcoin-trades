@@ -1,7 +1,7 @@
 // src/App.js
 import React from 'react';
 import Home from './Home';
-import './styles.css';
+import './Home.css';
 
 const App = () => {
   return (
