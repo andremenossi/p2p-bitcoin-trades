@@ -11,7 +11,10 @@ const Home = () => {
 
     function handleScroll() {
       const scrollY = window.pageYOffset;
-      if (scrollY > 0) {
+      const headerHeight = header.offsetHeight;
+      const viewportHeight = window.innerHeight;
+
+      if (scrollY > headerHeight - viewportHeight) {
         header.classList.add('fixed-bottom');
         header.classList.remove('fixed-top');
       } else {
@@ -68,9 +71,6 @@ const Home = () => {
           <button>Compre Bitcoin agora</button>
         </section>
       </main>
-      <footer className="footer">
-        <p>&copy; 2023 Bitcoin.org</p>
-      </footer>
     </div>
   );
 };
